@@ -1,0 +1,160 @@
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #1a1a2e;
+    color: white;
+    padding-top: 80px;
+}
+
+
+.hero {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}  
+
+
+
+.crypto-table {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+}
+
+
+.table-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.table-layout:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.table-layout p {
+    flex: 1;
+    text-align: center;
+}
+
+
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-layout img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.green {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.red {
+    color: #ff3d3d;
+    font-weight: bold;
+}
+
+
+.market-cap {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .table-layout {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+} 
+

@@ -1,0 +1,164 @@
+/* ======= Global Styles ======= */
+body {
+    background-color: #131722; /* Dark Mode Background */
+    color: #ffffff; /* Light Text */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= Coin Container ======= */
+.coin {
+    padding: 80px 20px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ======= Coin Header Section ======= */
+.coin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background: #1e2329;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2f36;
+}
+
+/* Coin Name & Logo */
+.coin-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.coin-name img {
+    width: 50px;
+    height: 50px;
+}
+
+.coin-name p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f3ba2f; /* CoinMarketCap Gold */
+}
+
+/* ======= Market Stats Section (DARK THEME) ======= */
+.market-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background: #1e2329; /* Dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2f36;
+}
+
+/* Market Stats Items */
+.market-stats ul {
+    list-style: none;
+    padding: 10px;
+    background: #262b34; /* Slightly lighter dark box */
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #323842;
+}
+
+.market-stats li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d1d1d1;
+    padding: 5px;
+}
+
+.market-stats li:last-child {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ======= Chart Section (DARK THEME) ======= */
+.chart-container {
+    width: 90%;
+    max-width: 1000px;
+    background: #1e2329; /* Dark Background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2f36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.chart-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 1024px) {
+    .coin-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .market-stats {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .coin-name img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .coin-name p {
+        font-size: 1.5rem;
+    }
+
+    .market-stats ul {
+        padding: 8px;
+    }
+
+    .market-stats li {
+        font-size: 0.9rem;
+    }
+
+    .market-stats li:last-child {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .coin {
+        padding: 90px 10px 20px;
+    }
+
+    .chart-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .chart-container h3 {
+        font-size: 1.2rem;
+    }
+}

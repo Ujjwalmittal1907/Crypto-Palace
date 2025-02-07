@@ -1,0 +1,137 @@
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    color: #ddd;
+    border-bottom: 2px solid #3c3c3c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a2e;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    width: clamp(120px, 12vw, 200px);
+}
+
+.navbar ul {
+    display: flex;
+    gap: clamp(20px, 3vw, 40px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 1vw, 20px);
+}
+
+
+.navbar select {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar option {
+    background-color: #09005c;
+    color: white;
+}
+
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: clamp(8px, 1.5vw, 10px) clamp(20px, 2.5vw, 25px);
+    border-radius: 20px;
+    font-size: clamp(14px, 1.5vw, 15px);
+    font-weight: 500;
+    color: #393999;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button img {
+    width: clamp(11px, 1.2vw, 13px);
+}
+
+body {
+    padding-top: clamp(70px, 15vw, 200px);
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 4%;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-right {
+        order: 2;
+    }
+
+    .navbar .logo {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar button {
+        width: 100%;
+        justify-content: center;
+    }
+} 
+
